@@ -7,7 +7,7 @@ import './App.css'
 import { ToastContainer } from 'react-toastify';
 import Team from './Pages/Team';
 import ContactUs from './Pages/ContactUs';
-
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
