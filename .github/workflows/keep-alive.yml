@@ -1,0 +1,14 @@
+name: Keep Node Server Alive
+
+on:
+  schedule:
+    - cron: "*/10 * * * *" # Runs every 10 minutes
+
+jobs:
+  ping-server:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping Node Server
+        run: |
+          curl -s --request GET https://temptide-backend.onrender.com || echo "Server ping failed"
