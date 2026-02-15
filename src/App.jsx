@@ -15,12 +15,14 @@ function App() {
     <>
       <Router>
         <Header />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/view/:id" element={<Homepage />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-        </Routes>
+        <main className="pt-16">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/view/:id" element={<Homepage />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+          </Routes>
+        </main>
         <Footer />
 
       </Router>
